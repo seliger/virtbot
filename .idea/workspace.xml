@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a26da19f-93fc-4f50-ac5d-931e5f45b56d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virtbot/field/DynamicField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virtbot/field/objects/Thing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virtbot/robot/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virtbot/robot/subsystems/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virtbot/robot/subsystems/DistanceSensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virtbot/robot/subsystems/DriveTrain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virtbot/robot/subsystems/Gyro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virtbot/robot/subsystems/Motor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virtbot/userinterface/TextConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/virtbot.iml" afterDir="false" />
+    <list default="true" id="a26da19f-93fc-4f50-ac5d-931e5f45b56d" name="Changes" comment="Base Skeleton">
+      <change afterPath="$PROJECT_DIR$/src/virtbot/userinterface/ConsoleCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/virtbot/VirtBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virtbot/VirtBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/virtbot/robot/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virtbot/robot/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/virtbot/robot/subsystems/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virtbot/robot/subsystems/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/virtbot/userinterface/TextConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virtbot/userinterface/TextConsole.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -60,10 +51,24 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="virtbot.VirtBot" />
+      <module name="virtbot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,14 +79,51 @@
       <updated>1695493664174</updated>
       <workItem from="1695493665217" duration="41000" />
       <workItem from="1695493719218" duration="7000" />
-      <workItem from="1695493739216" duration="1470000" />
+      <workItem from="1695493739216" duration="9685000" />
+      <workItem from="1695504766450" duration="9051000" />
     </task>
+    <task id="LOCAL-00001" summary="Base Skeleton">
+      <option name="closed" value="true" />
+      <created>1695495375171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695495375171</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Base Skeleton">
+      <option name="closed" value="true" />
+      <created>1695497139311</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695497139311</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Base Skeleton" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base Skeleton" />
+  </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
