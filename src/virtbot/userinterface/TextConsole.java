@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class TextConsole {
     private static final Scanner console = new Scanner(System.in);
@@ -23,9 +24,16 @@ public class TextConsole {
             // and run that command, passing in the command, so
             // it can access the arguments.
             if (!command.isEmpty()) {
-                ConsoleCommands.stream()
+                List<ConsoleCommands> validCommand = ConsoleCommands.stream()
                         .filter(cmd -> cmd.toString().equals(command.get(0).toLowerCase()))
-                        .forEach(cmd -> cmd.doCommand(command));
+                        .collect(Collectors.toList());
+
+                // Should always be one and only one
+                if(!validCommand.isEmpty()) {
+                    validCommand.forEach(cmd -> cmd.doCommand(command));
+                } else {
+                    System.out.println("I don't know how to " + command.get(0) + ".");
+                }
             }
         }
     }
