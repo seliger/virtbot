@@ -56,5 +56,4 @@ public enum ConsoleCommands {
     public static Stream<ConsoleCommands> stream() {
         return Stream.of(ConsoleCommands.values());
     }
-
 }

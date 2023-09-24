@@ -17,22 +17,22 @@ public class TextConsole {
         // Implement our Read, Evaluate, Print Loop (REPL) to
         // handle incoming commands from the console.
         while (VirtBot.isRunning()) {
-            List<String> command = promptAndWait(prompt);
+            List<String> tokens = promptAndWait(prompt);
 
             // See if we entered at least one token. If so,
-            // find that token in the enumeration of commands
-            // and run that command, passing in the command, so
+            // find (filter) the token in the enumeration of commands
+            // and run that command, passing in the tokens, so
             // it can access the arguments.
-            if (!command.isEmpty()) {
+            if (!tokens.isEmpty()) {
                 List<ConsoleCommands> validCommand = ConsoleCommands.stream()
-                        .filter(cmd -> cmd.toString().equals(command.get(0).toLowerCase()))
+                        .filter(cmd -> cmd.toString().equals(tokens.get(0).toLowerCase()))
                         .collect(Collectors.toList());
 
                 // Should always be one and only one
                 if(!validCommand.isEmpty()) {
-                    validCommand.forEach(cmd -> cmd.doCommand(command));
+                    validCommand.forEach(cmd -> cmd.doCommand(tokens));
                 } else {
-                    System.out.println("I don't know how to " + command.get(0) + ".");
+                    System.out.println("I don't know how to " + tokens.get(0) + ".");
                 }
             }
         }
